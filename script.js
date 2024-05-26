@@ -37,28 +37,256 @@
 //     console.log("Out of range number");
 // }
 
-let num2=Number(prompt("Enter a number for day:"));
-switch(num2){
-    case 1: console.log( num2, " -> Monday");
-    break;
-    case 2: console.log( num2, " -> Tuesday");
-    break;
-    case 3: console.log( num2, " -> wednesday");
-    break;
-    case 4: console.log( num2, " -> Thursday");
-    break;
-    case 5: console.log( num2, " -> Friday");
-    break;
-    case 6: console.log( num2, " -> Suturday");
-    break;
-    case 7: console.log( num2, " -> Sunday");
-    break;
-    default: console.log("Out of range");
-    console.log(num2);
+// let num2=Number(prompt("Enter a number for day:"));
+// switch(num2){
+//     case 1: console.log( num2, " -> Monday");
+//     break;
+//     case 2: console.log( num2, " -> Tuesday");
+//     break;
+//     case 3: console.log( num2, " -> wednesday");
+//     break;
+//     case 4: console.log( num2, " -> Thursday");
+//     break;
+//     case 5: console.log( num2, " -> Friday");
+//     break;
+//     case 6: console.log( num2, " -> Suturday");
+//     break;
+//     case 7: console.log( num2, " -> Sunday");
+//     break;
+//     default: console.log("Out of range");
+//     console.log(num2);
     
-}
+// }
 // let num1 = prompt("Enter a number:");
 // let i= num1 %5 ===0 ? console.log(num1," is multiple by 5"):console.log(num1," is not multiple by 5");
 
 
 // console.log(7/6);
+// let n = prompt("Enter a number for FOR loops:");
+// for(let i=1;i<=10;i++){
+//     console.log(`${n} * ${i} = ${i*n}`);
+// }
+// let m = prompt("Enter a number for WHILE loop:");
+// let i=1;
+// while(i<=10){
+//     console.log(m ," * ",  i ," = ",m*i);
+//     i++;
+// }
+
+// if(0 == 5 > 8){
+//     console.log("TRUE");
+// }else{
+//     console.log("FALSE");
+// }
+// let str = "AKASH SAMANTA";
+// for(let i of str){
+//     console.log(i);
+// }
+// for(let i=0;i<str.length;i++){
+//     console.log(str[i]);
+//     console.log(str.charAt(i));
+// }
+
+// const phoneNumber = {
+//     akash : 123456,
+//     subhajit:4365486,
+//     shambuddha:34986,
+//     dwaipayan:436898
+// }
+
+// console.log(str);
+// console.log(phoneNumber);
+
+// for(let j in phoneNumber){
+//     console.log(`${j} -> ${phoneNumber[j]}`);
+// }
+
+// let str =prompt("Enter a string:");
+// console.log(str.toUpperCase());
+// console.log(str);
+// console.log(str.toLowerCase());
+// console.log(str);
+// console.log(str.slice(2,7));
+// console.log(str);
+// console.log(str.replace("sh","sshh"));
+// console.log(str);
+// console.log(str.concat("AKASH"));
+// console.log(str);
+// let k="";
+// k=`@${str+str.length}`;
+// console.log(k);
+// let arr = [ 4,5,6,7,8,9];
+
+// console.log("Good morning");
+
+
+// console.log(`sum = ${sum(6,8)}`);
+
+// function sum(a,b){
+//     return a+b;
+// }
+// function print(){
+//     console.log("Welcome to javascript programming.");
+// }
+
+// function factorial(n){
+//     if(n==1){
+//         return 1;
+//     }
+//     return n*factorial(n-1);
+// }
+
+// const sum1=(a,b)=>{
+//     return a+b;
+// }
+// const fact=(n)=>{
+//     if(n==1){
+//         return 1;
+//     }
+//     return n*fact(n-1);
+// }
+// const fibonacci = (n)=>{
+//     if(n===1 || n===0){
+//         return n;
+//     }
+//     return fibonacci(n-1)+fibonacci(n-2);
+// }
+// let m = prompt("Enter a number:");5
+// for(let i=0;i<m;i++){
+//     console.log(`${i+1} fibonacci number = ${fibonacci(i)}`);
+// }
+
+// let str=prompt("Enter a string:");
+// let vowel="aeiouAEIOU";
+// console.log(`No of vowel= ${countVowel()}`);
+// function countVowel(){
+//     let count=0;
+//     for(let i of str){
+//         for(let j of vowel){
+//             if(i === j){
+//                 count++;
+//                 console.log(`${count} vowel is ${i}`);
+//             }
+//         }
+//     }
+//     return count;
+// }
+
+// let str="astgfryht";
+// let arr = [ 4,5,6,7,8,9];
+// arr.forEach((a,b,c)=>{
+//     console.log(a*2,b,c);
+// });
+
+// let arr = [ 4,5,6,7,8,9];
+// const array=(a,b,c)=>{
+//     console.log(a*a,c);
+// }
+// arr.forEach(array);
+
+// let arr = [ 4,5,6,7,8,9];
+// let array=arr.map((a,b,c)=>{
+//     console.log(a*a,c);
+//     return a*a;
+// });
+// console.log(array);
+// let h=[];
+// let g="";
+
+// let arr1=(a,b,c)=>{
+//     console.log(a*a,c);
+//     return a*a;
+// }
+// let arr = [ 4,5,6,7,8,9];
+// let array=arr.map(arr1);
+// console.log(array);
+
+// let arr1=(a,b,c)=>{
+//     console.log(a*a,c);
+//     return a%2===0;
+// }
+// let arr = [ 4,5,6,7,8,9];
+// let array=arr.filter(arr1);
+// console.log(array);
+
+// let arr1=(a,b,c,d)=>{
+//     console.log(a,b,c,d);
+//     return a>b?a:b;
+// }
+// let arr = [ 3,4,5,6,7,8,9,3,56,7,4,2,5];
+// let array=arr.reduce(arr1);
+// console.log(array);
+
+// let num=prompt("Enter no of studemt");
+// let arr=[];
+// for(let i=0;i<num;i++){
+//     arr[i]=prompt(`Enter ${i+1} student marks:`);
+// }
+// let array=arr.filter((value)=>{
+//     return value>90;
+// });
+// console.log(array);
+
+// let num=prompt("Enter a number:");
+// let arr=[];
+// for(let i=0;i<num;i++){
+//     arr[i]=i+1;
+// }
+// let array=arr.reduce((val1,val2)=>{
+//     return val1*val2;
+// });
+// console.log(array);
+
+// console.log(window);
+// console.dir(window);
+// console.log(window.document);
+// console.dir(window.document);
+// console.log(document); 
+// console.dir(document);
+// console.log(4+7);
+
+// console.dir(document.body);
+// console.log(document.body);
+// console.dir(4+7);
+// console.dir(document.head);
+// console.log(document.head);
+
+// console.log(document.body.childNodes);
+// console.log(document.body.children);
+// console.log(document.body.childNodes[0]);
+// console.log(document.body.children[0]);
+// console.dir(document.body.childNodes);
+// console.dir(document.body.children);
+// console.dir(document.body.childNodes[0]);
+// console.dir(document.body.children[0]);
+// document.body.style.background="green";
+// let tag=document.getElementsByTagName("p");
+// console.dir(tag);
+// let a=document.getElementById("abc");
+// console.dir(a);
+// let tag=document.querySelector("h1");
+// console.dir(tag);
+// console.dir(tag.tagName);
+// console.dir(tag.innerText);
+// console.dir(tag.innerHTML);
+// console.dir(tag.textContent);
+// console.log(tag[0].tagName);
+// console.log(tag[0].innerText);
+// console.log(tag[0].innerHtml);
+// console.log(tag[0].textContent);
+// console.dir(tag.childNodes[1].innerHTML);
+
+let h=document.querySelector("p");
+console.dir(h.innerText);
+h.innerText +=" learn from apnacollege";
+
+let t=document.querySelectorAll(".box");
+for(let i of t){
+    i.innerText +="1";
+}
+h.innerText +=" learn from apnacollege";
+
+let s=document.querySelector("h1");
+for(let i of s.childNodes){
+    i.innerText +="1";
+}
