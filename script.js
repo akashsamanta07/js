@@ -243,8 +243,50 @@
 // console.dir(window.document);
 // console.log(document); 
 // console.dir(document);
+// console.log(4+7);
 
+// console.dir(document.body);
+// console.log(document.body);
+// console.dir(4+7);
+// console.dir(document.head);
+// console.log(document.head);
 
-console.dir(document.body);
+// console.log(document.body.childNodes);
+// console.log(document.body.children);
+// console.log(document.body.childNodes[0]);
+// console.log(document.body.children[0]);
+// console.dir(document.body.childNodes);
+// console.dir(document.body.children);
+// console.dir(document.body.childNodes[0]);
+// console.dir(document.body.children[0]);
+// document.body.style.background="green";
+// let tag=document.getElementsByTagName("p");
+// console.dir(tag);
+// let a=document.getElementById("abc");
+// console.dir(a);
+// let tag=document.querySelector("h1");
+// console.dir(tag);
+// console.dir(tag.tagName);
+// console.dir(tag.innerText);
+// console.dir(tag.innerHTML);
+// console.dir(tag.textContent);
+// console.log(tag[0].tagName);
+// console.log(tag[0].innerText);
+// console.log(tag[0].innerHtml);
+// console.log(tag[0].textContent);
+// console.dir(tag.childNodes[1].innerHTML);
 
+let h=document.querySelector("p");
+console.dir(h.innerText);
+h.innerText +=" learn from apnacollege";
 
+let t=document.querySelectorAll(".box");
+for(let i of t){
+    i.innerText +="1";
+}
+h.innerText +=" learn from apnacollege";
+
+let s=document.querySelector("h1");
+for(let i of s.childNodes){
+    i.innerText +="1";
+}
